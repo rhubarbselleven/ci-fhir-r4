@@ -28,14 +28,14 @@
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
         <link rel="shortcut icon" href="assets/ico/favicon.png"/>
         <script type="application/javascript" src="history-cm.js"> </script>
-        <script type="application/javascript" src="http://hl7.org/fhir/history.js"> </script>
+        <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
         <link href="history.css" rel="stylesheet"/>
     
   </head>
   <body>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/agency-logo-www.png"/></a>
+        <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/adha-logo-dark.svg"/></a>
         <div id="ig-status">
           <b id="ig-title">Australian Digital Health Agency Medicare Records FHIR Implementation Guide</b>
         </div>
@@ -119,7 +119,7 @@
     <div id="segment-footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
         <div class="inner-wrapper">
-          <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000<br/>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a><br/><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
+		<p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000<br>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a><br><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a><br><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au/about-us/policies-privacy-and-reporting/privacy-policy">Privacy policy</a> | <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au/about-us/policies-privacy-and-reporting/terms-of-use">Terms of Use</a></p>
           <p>
             <span id="ig-footer">TBD </span> &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR</a> |
             <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
@@ -151,8 +151,37 @@
     
     <!--- Include in the page --->
     <script>
-var pageJSON = '{"package-id": "au.digitalhealth.stu3.medicare-records","title": "Australian Digital Health Agency Medicare Records FHIR Implementation Guide","canonical": "http://ns.electronichealth.net.au/fhir/medicare-records","list": [{"version": "current","desc": "Continuous Integration Build STU3 (latest in version control) - Content subject to frequent changes.","path": "https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records","status": "ci-build","fhirversion": "3.0.2","current": true},{"version": "2.1.0","date": "2022-10-06","desc": "The Australian Digital Health Agency Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts extended for the Enhanced Use of Immunisation Records project.","path": "https://fhir.digitalhealth.gov.au/STU3/medicare-records/2.1.0","status": "release","fhirversion": "3.0.2","sequence": "STU3","current": true},{"version": "1.0.0","date": "2018-11-01","desc": "The Australian Digital Health Agency Medicare Records FHIR Implementation Guide was developed in support of the Medicare Document Simplification work package for My Health Record system release v9.3.","path": "https://developer.digitalhealth.gov.au/sites/default/files/specifications/clinical-documents/ep-2746-2018/dh-2738-2018","status": "release","fhirversion": "3.0.1","sequence": "STU3"}]}';
-load(pageJSON);
+var historyPayload = {
+    "package-id": "au.digitalhealth.stu3.medicare-records",
+    "title": "Australian Digital Health Agency Medicare Records FHIR Implementation Guide",
+    "canonical": "http://ns.electronichealth.net.au/fhir/medicare-records",
+    "list": [{
+        "version": "current",
+        "desc": "Continuous Integration Build STU3 (latest in version control) - Content subject to frequent changes.",
+        "path": "https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records",
+        "status": "ci-build",
+        "fhirversion": "3.0.2",
+        "current": true
+    }, {
+        "version": "2.1.0",
+        "date": "2022-10-06",
+        "desc": "The Australian Digital Health Agency Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts extended for the Enhanced Use of Immunisation Records project.",
+        "path": "https://fhir.digitalhealth.gov.au/medicare-records/2.1.0",
+        "status": "release",
+        "fhirversion": "3.0.2",
+        "sequence": "STU3",
+        "current": true
+    }, {
+        "version": "1.0.0",
+        "date": "2018-11-01",
+        "desc": "The Australian Digital Health Agency Medicare Records FHIR Implementation Guide was developed in support of the Medicare Document Simplification work package for My Health Record system release v9.3.",
+        "path": "https://developer.digitalhealth.gov.au/sites/default/files/specifications/clinical-documents/ep-2746-2018/dh-2738-2018",
+        "status": "release",
+        "fhirversion": "3.0.1",
+        "sequence": "STU3"
+    }]
+}
+load(JSON.stringify(historyPayload));
 </script>
     
   </body>
